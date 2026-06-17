@@ -1,0 +1,1096 @@
+// Auto-generated from data/exhibits.json (KM Trans case exhibits 2,4,5,8).
+// Embedded so the tool runs from file:// as well as when hosted.
+const EXHIBITS = {
+  "meta": {
+    "source": "KM Trans Logistics: Workshop Operations (Ivey W14346)",
+    "observationDays": 73,
+    "skillLevels": {
+      "high": 10,
+      "medium": 7,
+      "low": 4,
+      "expertReference": 10
+    },
+    "productiveMinutesPerDay": 420,
+    "delayCostPerTruckPerDay": 2500,
+    "departments": [
+      "Mechanical",
+      "Denting",
+      "Balancer",
+      "Electrician",
+      "Welder",
+      "Tire"
+    ]
+  },
+  "jobs": [
+    {
+      "name": "Accident",
+      "bayType": "Extra",
+      "flatbed": 7,
+      "car": 9,
+      "arrivalsTotal73d": 16,
+      "lambdaPerDay": 0.21918,
+      "stdDevArrivalsPerDay": 0.31,
+      "labourCost": 15000,
+      "meanServiceMinExpert": 6300,
+      "serviceCV": 0.7,
+      "carrierSplit": {
+        "flatbed": 7,
+        "car": 9
+      },
+      "deptRequirements": {
+        "Mechanical": 0.3,
+        "Denting": 0.7,
+        "Balancer": 0.1,
+        "Electrician": 0.3,
+        "Welder": 0.6,
+        "Tire": 0.1
+      }
+    },
+    {
+      "name": "Air Filter Change",
+      "bayType": "Usual",
+      "flatbed": 39,
+      "car": 10,
+      "arrivalsTotal73d": 49,
+      "lambdaPerDay": 0.67123,
+      "stdDevArrivalsPerDay": 0.64,
+      "labourCost": 30,
+      "meanServiceMinExpert": 5,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 39,
+        "car": 10
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Balance Rod Alignment (Leaf Spring)",
+      "bayType": "Usual",
+      "flatbed": 89,
+      "car": 9,
+      "arrivalsTotal73d": 98,
+      "lambdaPerDay": 1.34247,
+      "stdDevArrivalsPerDay": 1.39,
+      "labourCost": 100,
+      "meanServiceMinExpert": 90,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 89,
+        "car": 9
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 0,
+        "Balancer": 1,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 1
+      }
+    },
+    {
+      "name": "Battery Check Or Change",
+      "bayType": "Usual",
+      "flatbed": 45,
+      "car": 6,
+      "arrivalsTotal73d": 51,
+      "lambdaPerDay": 0.69863,
+      "stdDevArrivalsPerDay": 0.75,
+      "labourCost": 100,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 45,
+        "car": 6
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 1,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Brake Lining Change",
+      "bayType": "Usual",
+      "flatbed": 13,
+      "car": 8,
+      "arrivalsTotal73d": 21,
+      "lambdaPerDay": 0.28767,
+      "stdDevArrivalsPerDay": 0.35,
+      "labourCost": 15,
+      "meanServiceMinExpert": 540,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 13,
+        "car": 8
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 1
+      }
+    },
+    {
+      "name": "Brake Oil",
+      "bayType": "Usual",
+      "flatbed": 9,
+      "car": 8,
+      "arrivalsTotal73d": 17,
+      "lambdaPerDay": 0.23288,
+      "stdDevArrivalsPerDay": 0.36,
+      "labourCost": 30,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 9,
+        "car": 8
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Brake Setting",
+      "bayType": "Usual",
+      "flatbed": 58,
+      "car": 30,
+      "arrivalsTotal73d": 88,
+      "lambdaPerDay": 1.20548,
+      "stdDevArrivalsPerDay": 0.82,
+      "labourCost": 10,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 58,
+        "car": 30
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Cabin Setting",
+      "bayType": "Extra",
+      "flatbed": 9,
+      "car": 8,
+      "arrivalsTotal73d": 17,
+      "lambdaPerDay": 0.23288,
+      "stdDevArrivalsPerDay": 0.36,
+      "labourCost": 250,
+      "meanServiceMinExpert": 180,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 9,
+        "car": 8
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 1,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Clutch Overhaul",
+      "bayType": "Usual",
+      "flatbed": 15,
+      "car": 20,
+      "arrivalsTotal73d": 35,
+      "lambdaPerDay": 0.47945,
+      "stdDevArrivalsPerDay": 0.49,
+      "labourCost": 700,
+      "meanServiceMinExpert": 240,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 15,
+        "car": 20
+      },
+      "deptRequirements": {
+        "Mechanical": 2,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Clutch Setting",
+      "bayType": "Usual",
+      "flatbed": 53,
+      "car": 33,
+      "arrivalsTotal73d": 86,
+      "lambdaPerDay": 1.17808,
+      "stdDevArrivalsPerDay": 0.9,
+      "labourCost": 50,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 53,
+        "car": 33
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Compressor Overhaul",
+      "bayType": "Usual",
+      "flatbed": 13,
+      "car": 5,
+      "arrivalsTotal73d": 18,
+      "lambdaPerDay": 0.24658,
+      "stdDevArrivalsPerDay": 0.39,
+      "labourCost": 300,
+      "meanServiceMinExpert": 90,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 13,
+        "car": 5
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Coolant Tank Repair",
+      "bayType": "Usual",
+      "flatbed": 6,
+      "car": 1,
+      "arrivalsTotal73d": 7,
+      "lambdaPerDay": 0.09589,
+      "stdDevArrivalsPerDay": 0.21,
+      "labourCost": 70,
+      "meanServiceMinExpert": 75,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 6,
+        "car": 1
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Coolant Change",
+      "bayType": "Usual",
+      "flatbed": 29,
+      "car": 11,
+      "arrivalsTotal73d": 40,
+      "lambdaPerDay": 0.54795,
+      "stdDevArrivalsPerDay": 0.56,
+      "labourCost": 50,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 29,
+        "car": 11
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Cross Change",
+      "bayType": "Usual",
+      "flatbed": 1,
+      "car": 6,
+      "arrivalsTotal73d": 7,
+      "lambdaPerDay": 0.09589,
+      "stdDevArrivalsPerDay": 0.21,
+      "labourCost": 50,
+      "meanServiceMinExpert": 67,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 1,
+        "car": 6
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 1,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Crown Oil Change",
+      "bayType": "Usual",
+      "flatbed": 15,
+      "car": 6,
+      "arrivalsTotal73d": 21,
+      "lambdaPerDay": 0.28767,
+      "stdDevArrivalsPerDay": 0.44,
+      "labourCost": 75,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 15,
+        "car": 6
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Denting",
+      "bayType": "Extra",
+      "flatbed": 23,
+      "car": 6,
+      "arrivalsTotal73d": 29,
+      "lambdaPerDay": 0.39726,
+      "stdDevArrivalsPerDay": 0.49,
+      "labourCost": 4000,
+      "meanServiceMinExpert": 240,
+      "serviceCV": 0.7,
+      "carrierSplit": {
+        "flatbed": 23,
+        "car": 6
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 2,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Diesel Filter Change",
+      "bayType": "Usual",
+      "flatbed": 49,
+      "car": 38,
+      "arrivalsTotal73d": 87,
+      "lambdaPerDay": 1.19178,
+      "stdDevArrivalsPerDay": 0.94,
+      "labourCost": 40,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 49,
+        "car": 38
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Diesel Tank Repair",
+      "bayType": "Usual",
+      "flatbed": 4,
+      "car": 1,
+      "arrivalsTotal73d": 5,
+      "lambdaPerDay": 0.06849,
+      "stdDevArrivalsPerDay": 0.18,
+      "labourCost": 350,
+      "meanServiceMinExpert": 100,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 4,
+        "car": 1
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 1,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 1,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Engine Oil Change",
+      "bayType": "Usual",
+      "flatbed": 31,
+      "car": 16,
+      "arrivalsTotal73d": 47,
+      "lambdaPerDay": 0.64384,
+      "stdDevArrivalsPerDay": 0.72,
+      "labourCost": 75,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 31,
+        "car": 16
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Engine Oil Top-up",
+      "bayType": "Usual",
+      "flatbed": 92,
+      "car": 27,
+      "arrivalsTotal73d": 119,
+      "lambdaPerDay": 1.63014,
+      "stdDevArrivalsPerDay": 1.24,
+      "labourCost": 75,
+      "meanServiceMinExpert": 10,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 92,
+        "car": 27
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Engine Overhaul",
+      "bayType": "Usual",
+      "flatbed": 9,
+      "car": 6,
+      "arrivalsTotal73d": 15,
+      "lambdaPerDay": 0.20548,
+      "stdDevArrivalsPerDay": 0.27,
+      "labourCost": 5000,
+      "meanServiceMinExpert": 900,
+      "serviceCV": 0.7,
+      "carrierSplit": {
+        "flatbed": 9,
+        "car": 6
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Fan Belt Change",
+      "bayType": "Usual",
+      "flatbed": 7,
+      "car": 4,
+      "arrivalsTotal73d": 11,
+      "lambdaPerDay": 0.15068,
+      "stdDevArrivalsPerDay": 0.29,
+      "labourCost": 50,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 7,
+        "car": 4
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Fifth Wheel Check",
+      "bayType": "Usual",
+      "flatbed": 15,
+      "car": 4,
+      "arrivalsTotal73d": 19,
+      "lambdaPerDay": 0.26027,
+      "stdDevArrivalsPerDay": 0.44,
+      "labourCost": 50,
+      "meanServiceMinExpert": 60,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 15,
+        "car": 4
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 0,
+        "Balancer": 2,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Fuel Injection Pump Repair",
+      "bayType": "Usual",
+      "flatbed": 22,
+      "car": 26,
+      "arrivalsTotal73d": 48,
+      "lambdaPerDay": 0.65753,
+      "stdDevArrivalsPerDay": 0.62,
+      "labourCost": 500,
+      "meanServiceMinExpert": 180,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 22,
+        "car": 26
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Gear Lever Setting",
+      "bayType": "Usual",
+      "flatbed": 36,
+      "car": 18,
+      "arrivalsTotal73d": 54,
+      "lambdaPerDay": 0.73973,
+      "stdDevArrivalsPerDay": 0.68,
+      "labourCost": 50,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 36,
+        "car": 18
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Gear Oil Change",
+      "bayType": "Usual",
+      "flatbed": 16,
+      "car": 7,
+      "arrivalsTotal73d": 23,
+      "lambdaPerDay": 0.31507,
+      "stdDevArrivalsPerDay": 0.42,
+      "labourCost": 75,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 16,
+        "car": 7
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Gear Overhaul",
+      "bayType": "Usual",
+      "flatbed": 15,
+      "car": 7,
+      "arrivalsTotal73d": 22,
+      "lambdaPerDay": 0.30137,
+      "stdDevArrivalsPerDay": 0.36,
+      "labourCost": 600,
+      "meanServiceMinExpert": 210,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 15,
+        "car": 7
+      },
+      "deptRequirements": {
+        "Mechanical": 2,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Horse Hub Grease",
+      "bayType": "Usual",
+      "flatbed": 31,
+      "car": 16,
+      "arrivalsTotal73d": 47,
+      "lambdaPerDay": 0.64384,
+      "stdDevArrivalsPerDay": 0.55,
+      "labourCost": 65,
+      "meanServiceMinExpert": 180,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 31,
+        "car": 16
+      },
+      "deptRequirements": {
+        "Mechanical": 2,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 1
+      }
+    },
+    {
+      "name": "Hosepipe Change",
+      "bayType": "Usual",
+      "flatbed": 13,
+      "car": 3,
+      "arrivalsTotal73d": 16,
+      "lambdaPerDay": 0.21918,
+      "stdDevArrivalsPerDay": 0.35,
+      "labourCost": 40,
+      "meanServiceMinExpert": 60,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 13,
+        "car": 3
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Pressure Leakage",
+      "bayType": "Usual",
+      "flatbed": 114,
+      "car": 89,
+      "arrivalsTotal73d": 203,
+      "lambdaPerDay": 2.78082,
+      "stdDevArrivalsPerDay": 1.28,
+      "labourCost": 40,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 114,
+        "car": 89
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Radiator Service New",
+      "bayType": "Usual",
+      "flatbed": 39,
+      "car": 7,
+      "arrivalsTotal73d": 46,
+      "lambdaPerDay": 0.63014,
+      "stdDevArrivalsPerDay": 0.68,
+      "labourCost": 325,
+      "meanServiceMinExpert": 60,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 39,
+        "car": 7
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Relay Valve",
+      "bayType": "Usual",
+      "flatbed": 13,
+      "car": 8,
+      "arrivalsTotal73d": 21,
+      "lambdaPerDay": 0.28767,
+      "stdDevArrivalsPerDay": 0.41,
+      "labourCost": 200,
+      "meanServiceMinExpert": 90,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 13,
+        "car": 8
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Self-Alternator Service",
+      "bayType": "Usual",
+      "flatbed": 14,
+      "car": 7,
+      "arrivalsTotal73d": 21,
+      "lambdaPerDay": 0.28767,
+      "stdDevArrivalsPerDay": 0.41,
+      "labourCost": 200,
+      "meanServiceMinExpert": 60,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 14,
+        "car": 7
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 1,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Steering Box Oil Filter",
+      "bayType": "Usual",
+      "flatbed": 42,
+      "car": 12,
+      "arrivalsTotal73d": 54,
+      "lambdaPerDay": 0.73973,
+      "stdDevArrivalsPerDay": 0.83,
+      "labourCost": 35,
+      "meanServiceMinExpert": 36,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 42,
+        "car": 12
+      },
+      "deptRequirements": {
+        "Mechanical": 2,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Tappet Setting Change",
+      "bayType": "Usual",
+      "flatbed": 26,
+      "car": 11,
+      "arrivalsTotal73d": 37,
+      "lambdaPerDay": 0.50685,
+      "stdDevArrivalsPerDay": 0.48,
+      "labourCost": 100,
+      "meanServiceMinExpert": 45,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 26,
+        "car": 11
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Thermostat Valve Repair",
+      "bayType": "Usual",
+      "flatbed": 1,
+      "car": 1,
+      "arrivalsTotal73d": 2,
+      "lambdaPerDay": 0.0274,
+      "stdDevArrivalsPerDay": 0.12,
+      "labourCost": 70,
+      "meanServiceMinExpert": 36,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 1,
+        "car": 1
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Trolley Grease",
+      "bayType": "Usual",
+      "flatbed": 63,
+      "car": 23,
+      "arrivalsTotal73d": 86,
+      "lambdaPerDay": 1.17808,
+      "stdDevArrivalsPerDay": 0.99,
+      "labourCost": 65,
+      "meanServiceMinExpert": 195,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 63,
+        "car": 23
+      },
+      "deptRequirements": {
+        "Mechanical": 2,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 1
+      }
+    },
+    {
+      "name": "Turbo Check Change",
+      "bayType": "Usual",
+      "flatbed": 11,
+      "car": 1,
+      "arrivalsTotal73d": 12,
+      "lambdaPerDay": 0.16438,
+      "stdDevArrivalsPerDay": 0.3,
+      "labourCost": 50,
+      "meanServiceMinExpert": 90,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 11,
+        "car": 1
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Tire",
+      "bayType": "Extra",
+      "flatbed": 90,
+      "car": 64,
+      "arrivalsTotal73d": 154,
+      "lambdaPerDay": 2.10959,
+      "stdDevArrivalsPerDay": 1.24,
+      "labourCost": 40,
+      "meanServiceMinExpert": 30,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 90,
+        "car": 64
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 2
+      }
+    },
+    {
+      "name": "Water Body Change",
+      "bayType": "Usual",
+      "flatbed": 3,
+      "car": 0,
+      "arrivalsTotal73d": 3,
+      "lambdaPerDay": 0.0411,
+      "stdDevArrivalsPerDay": 0.14,
+      "labourCost": 100,
+      "meanServiceMinExpert": 75,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 3,
+        "car": 0
+      },
+      "deptRequirements": {
+        "Mechanical": 1,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Window Glass Or Machining",
+      "bayType": "Usual",
+      "flatbed": 8,
+      "car": 11,
+      "arrivalsTotal73d": 19,
+      "lambdaPerDay": 0.26027,
+      "stdDevArrivalsPerDay": 0.39,
+      "labourCost": 50,
+      "meanServiceMinExpert": 55,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 8,
+        "car": 11
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 1,
+        "Balancer": 0,
+        "Electrician": 0,
+        "Welder": 0,
+        "Tire": 0
+      }
+    },
+    {
+      "name": "Wiring",
+      "bayType": "Usual",
+      "flatbed": 317,
+      "car": 134,
+      "arrivalsTotal73d": 451,
+      "lambdaPerDay": 6.17808,
+      "stdDevArrivalsPerDay": 2.89,
+      "labourCost": 1000,
+      "meanServiceMinExpert": 45,
+      "serviceCV": 0.3,
+      "carrierSplit": {
+        "flatbed": 317,
+        "car": 134
+      },
+      "deptRequirements": {
+        "Mechanical": 0,
+        "Denting": 0,
+        "Balancer": 0,
+        "Electrician": 1,
+        "Welder": 0,
+        "Tire": 0
+      }
+    }
+  ],
+  "workerSkillMap": {
+    "Mechanical": {
+      "high": 3,
+      "medium": 8,
+      "low": 3
+    },
+    "Denting": {
+      "high": 3,
+      "medium": 1,
+      "low": 1
+    },
+    "Balancer": {
+      "high": 3,
+      "medium": 0,
+      "low": 0
+    },
+    "Electrician": {
+      "high": 3,
+      "medium": 0,
+      "low": 0
+    },
+    "Welder": {
+      "high": 1,
+      "medium": 4,
+      "low": 1
+    },
+    "Tire": {
+      "high": 5,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "validationExhibit8": {
+    "totalCases": 340,
+    "buckets": [
+      {
+        "label": "< 1 day",
+        "atLeastDays": 0,
+        "count": 310
+      },
+      {
+        "label": "> 1 day",
+        "atLeastDays": 1,
+        "count": 30
+      },
+      {
+        "label": "> 2 days",
+        "atLeastDays": 2,
+        "count": 8
+      },
+      {
+        "label": "> 5 days",
+        "atLeastDays": 5,
+        "count": 5
+      },
+      {
+        "label": "> 20 days",
+        "atLeastDays": 20,
+        "count": 1
+      }
+    ]
+  }
+};

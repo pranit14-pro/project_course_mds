@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KM Trans Workshop — Simulation Playground</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>KM Trans Logistics — Workshop Operations Simulator</h1>
+      <p class="sub">A discrete-event simulation of the Jaipur maintenance workshop ·
+        data fitted from the Ivey case exhibits</p>
+    </div>
+    <div class="hdr-actions">
+      <button id="runBtn" class="primary">▶ Run simulation</button>
+      <button id="resetBtn">Reset defaults</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ LEFT: CONTROLS (the design levers) ============ -->
+    <aside id="controls">
+      <section>
+        <h2>Bays</h2>
+        <label>General service bays
+          <span class="val" id="generalBaysVal"></span>
+          <input type="range" id="generalBays" min="1" max="16" step="1" />
+        </label>
+        <label>Dedicated long-job ("extra") bays
+          <span class="val" id="extraBaysVal"></span>
+          <input type="range" id="extraBays" min="0" max="8" step="1" />
+        </label>
+        <label class="check">
+          <input type="checkbox" id="useInspectionBay" />
+          Use the (normally idle) inspection bay
+        </label>
+        <label class="check">
+          <input type="checkbox" id="separateLongJobs" />
+          Separate long jobs into dedicated bays
+        </label>
+      </section>
+
+      <section>
+        <h2>Mechanics (Exhibit 2)</h2>
+        <p class="hint">High / Medium / Low skilled workers per department.
+          Skill sets service speed (skill 10 = expert).</p>
+        <div id="staffing"></div>
+        <div class="staff-total" id="staffTotal"></div>
+      </section>
+
+      <section>
+        <h2>Policies</h2>
+        <label>Queue discipline
+          <select id="discipline">
+            <option value="SJF">Shortest job first (case rule)</option>
+            <option value="FIFO">First in, first out</option>
+          </select>
+        </label>
+        <label class="check">
+          <input type="checkbox" id="carrierPriority" />
+          Car carriers prioritised over flatbed
+        </label>
+      </section>
+
+      <section>
+        <h2>Scenario</h2>
+        <label>Demand multiplier
+          <span class="val" id="demandMultiplierVal"></span>
+          <input type="range" id="demandMultiplier" min="0.5" max="2" step="0.1" />
+        </label>
+        <label>Seasonal absenteeism (festival)
+          <span class="val" id="absenteeismVal"></span>
+          <input type="range" id="absenteeism" min="0" max="0.6" step="0.05" />
+        </label>
+        <label>Horizon (days)
+          <span class="val" id="simDaysVal"></span>
+          <input type="range" id="simDays" min="10" max="180" step="5" />
+        </label>
+        <label>Warm-up (days, discarded)
+          <span class="val" id="warmupDaysVal"></span>
+          <input type="range" id="warmupDays" min="0" max="20" step="1" />
+        </label>
+        <label>Replications
+          <span class="val" id="replicationsVal"></span>
+          <input type="range" id="replications" min="1" max="30" step="1" />
+        </label>
+        <label>Random seed
+          <input type="number" id="seed" min="1" step="1" />
+        </label>
+      </section>
+
+      <section class="scenario-store">
+        <h2>Compare</h2>
+        <button id="saveA">Save as A</button>
+        <button id="saveB">Save as B</button>
+        <div id="compareBox" class="compare-box hint">Run, then save scenarios to compare.</div>
+      </section>
+    </aside>
+
+    <!-- ============ CENTER + RIGHT: RESULTS ============ -->
+    <section id="results">
+      <div class="kpis" id="kpis">
+        <div class="placeholder">Set your levers on the left and press
+          <b>Run simulation</b>. Results, charts and a live day-by-day animation appear here.</div>
+      </div>
+
+      <div class="panel">
+        <h3>Workshop state — day-by-day (replication 1)</h3>
+        <div id="animWrap">
+          <canvas id="animCanvas" height="170"></canvas>
+          <div class="anim-ctrl">
+            <button id="playBtn">▶ Play</button>
+            <input type="range" id="dayScrub" min="1" max="1" step="1" value="1" />
+            <span id="dayLabel" class="hint"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="panel"><h3>Backlog (waiting jobs) over time</h3>
+          <canvas id="queueChart" height="200"></canvas></div>
+        <div class="panel"><h3>Bay occupancy over time</h3>
+          <canvas id="bayChart" height="200"></canvas></div>
+        <div class="panel"><h3>Mechanic utilisation by department</h3>
+          <canvas id="utilChart" height="200"></canvas></div>
+        <div class="panel"><h3>Time-in-workshop vs case (Exhibit 8)</h3>
+          <canvas id="validChart" height="200"></canvas></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Term IV Project Course · Faculty Guide: Prof. Debjit Roy ·
+      Built by Jayant Gangwar &amp; Pranit Rastogi</span>
+    <span>See <code>EQUATIONS.md</code> for the model equations and logic.</span>
+  </footer>
+
+  <!-- Chart.js (CDN) for charts. -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/exhibits-data.js"></script>
+  <script src="js/rng.js"></script>
+  <script src="js/distributions.js"></script>
+  <script src="js/sim.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
