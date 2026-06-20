@@ -535,15 +535,18 @@ independent reality check on all the assumptions above. Large gaps tell us which
 ## 8. One-line recap of the whole chain
 
 $$
-\underbrace{\lambda_i \Rightarrow \Lambda \Rightarrow T_{\text{gap}}}_{\text{when trucks arrive}}
-\;\rightarrow\;
-\underbrace{\varphi(s^{*}),\ \mu_{\text{eff}},\ X}_{\text{how long repair takes}}
-\;\rightarrow\;
-\underbrace{n_d,\ \text{hold}_d,\ \text{start rule}}_{\text{grab bay + workers}}
-\;\rightarrow\;
-\underbrace{W_k,\ \overline{L},\ \text{util},\ \text{DelayCost}}_{\text{measure performance}}
-\;\rightarrow\;
-\underbrace{\bar{x}\pm\text{CI}_{95}}_{\text{with confidence}}
+\begin{aligned}
+&\lambda_i \;\Rightarrow\; \Lambda \;\Rightarrow\; T_{\text{gap}}
+   && \text{(when trucks arrive)}\\[4pt]
+&\varphi(s^{*}),\ \mu_{\text{eff}},\ X
+   && \text{(how long the repair takes)}\\[4pt]
+&n_d,\ \text{hold}_d,\ \text{start rule}
+   && \text{(grab a bay + the right workers)}\\[4pt]
+&W_k,\ \overline{L},\ \text{utilisation},\ \text{DelayCost}
+   && \text{(measure performance)}\\[4pt]
+&\bar{x}\;\pm\;\text{CI}_{95}
+   && \text{(report it with confidence)}
+\end{aligned}
 $$
 
 Every symbol in that chain is defined above, and every number traces back to a KM Trans case
